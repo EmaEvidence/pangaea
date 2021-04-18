@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { gql, useQuery } from '@apollo/client';
-
 import './App.css';
 import Banner from './Components/Banner/Banner';
 import NavBar from './Components/NavBar/NavBar';
@@ -23,10 +22,10 @@ function App() {
   const [isCartOpen, toggleCart] = useState(false);
   const [currency, setCurrency] = useState('NGN');
   const [cartItems, setCartItems] = useState([]);
+  const [priceMap, setPriceMap] = useState({});
   const { loading, error, data, refetch } = useQuery(GET_PRODUCTS, {
     variables: { currency }
   });
-  const [priceMap, setPriceMap] = useState({});
 
   useEffect(() => {
     const priceObj = {};
