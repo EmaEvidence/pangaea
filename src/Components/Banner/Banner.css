@@ -1,0 +1,56 @@
+.banner {
+  width: 100%;
+  height: 30vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.banner .right, .banner .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner  select {
+  height: 40px;
+  width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner  select {
+    width: 80vw;
+  }
+}
+
+.banner .title {
+  font-size: 32px;
+}
+
+.banner .tagline {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner  select {
+    width: 80vw;
+  }
+
+  .banner .title, .banner .tagline  {
+    width: 100vw;
+    text-align: center;
+  }  
+}

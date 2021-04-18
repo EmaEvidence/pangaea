@@ -1,0 +1,44 @@
+.product {
+  padding: 3rem 2rem;
+  width: 30%;
+  height: 24rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    width: 40vw;
+  }
+}
+
+.product button {
+  width: 70%;
+  height: 2.5rem;
+  background: #4B5548;
+  color: #FFFFFF;
+  border: 0;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.product img {
+  object-fit: contain;
+  width: 100%;
+  height: 50%;
+}
+
+.product button:hover {
+  background: rgb(43, 46, 43);
+}
+
+@media screen and (max-width: 768px) {
+  .product button {
+    width: 100%;
+  }
+}
