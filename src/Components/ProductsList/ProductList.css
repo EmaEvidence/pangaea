@@ -1,0 +1,13 @@
+.products {
+  background: #E2E6E3;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  min-height: 70vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}

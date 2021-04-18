@@ -1,0 +1,134 @@
+.cart {
+  width: 100%;
+  height: 100vh;
+  max-width: 500px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #F2F2EF;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.cart .close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+}
+
+.cart select {
+  align-self: flex-start;
+  margin: 20px;
+  height: 30px;
+  width: 60px;
+  border: 0;
+  background: #FFFFFF;
+}
+
+.cart .item-container {
+  width: 100%;
+  padding: 20px;
+  flex: 1;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.cart .cart-footer {
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  box-shadow: 0 -4px 12px rgb(0 0 0 / 15%);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.cart-footer .cost-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart-footer button {
+  height: 40px;
+  width: 100%;
+  background: #4B5548;
+  color: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+}
+
+.cart-footer button:hover {
+  background: rgb(43, 46, 43);
+}
+
+.cart-item {
+  width: 100%;
+  height: 150px;
+  background: #FFFFFF;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cart-item .content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.cart-item .image-wrapper {
+  flex: 1;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cart-item .remove-btn {
+  align-self: flex-start;
+  background: transparent;
+  border: 0;
+}
+
+.cart-item .qty-control {
+  border: 0.5px solid #4B5548;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qty-control button {
+  border: 0;
+  background: transparent;
+  width: 30px;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+}
+
+.cart-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
